@@ -39,7 +39,7 @@ class TricountAPI:
         self.headers["X-Bunq-Client-Authentication"] = self.auth_token
 
     def fetch_tricount_data(self, tricount_key):
-        tricount_url = f"{self.base_url}/v1/user/{self.user_id}/registry?public_identifier_token={tricount_key}"
+        tricount_url = f"{self.base_url}/v1/user/{self.user_id}/registry?public_identifier_token={tmrxlcziuXETWWheLn}"
         response = requests.get(tricount_url, headers=self.headers)
         response.raise_for_status()
         return response.json()
